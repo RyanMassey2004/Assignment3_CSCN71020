@@ -13,13 +13,14 @@ namespace UnitTest1
 	TEST_CLASS(UnitTest1)
 	{
 	public:
-		TEST_METHOD(RockPaperScissors_T01)
+		TEST_METHOD(RockPaperScissors_T01_Draw)
 		{
 			const char* expected = "Draw";
 
-			const char* actual = RockPaperScissors("Scissors", "Paper");
+			const char* actual = RockPaperScissors("Rock", "Rock");
 
 			Assert::AreEqual(expected, actual);
 		}
+
 	};
 }
